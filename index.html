@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanashree Dhanawade - Game Dev Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">Dhanashree Dhanawade</div>
+        <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <img src="assets\images\DD RECENT.jpg" alt="Dhanashree" class="profile-photo">
+        <h1>Creating Immersive Worlds</h1>
+        <p>Game Developer | 3D Artist | UI/UX Designer</p>
+    </header>
+
+    <section id="projects" class="section">
+        <h2>Featured Projects</h2>
+        <div class="project-video-grid">
+            <div class="video-card" onclick="openVideoModal('video1')">
+                <video id="video1" class="background-video" muted autoplay loop>
+                    <source src="assets\videos\Treasure Sea-ker.mp4" type="video/mp4">
+                </video>
+                <div class="project-card">
+                    <h3 class="project-title">Treasure Sea-ker</h3>
+                    <p class="project-description">3D underwater platformer with dynamic UI, built using Unity's UI Toolkit.</p>
+                </div>
+            </div>
+
+            <div class="video-card" onclick="openVideoModal('video2')">
+                <video id="video2" class="background-video" muted autoplay loop>
+                    <source src="assets\videos\game.mp4" type="video/mp4">
+                </video>
+                <div class="project-card">
+                    <h3 class="project-title">Dual-Control: A 2D Game</h3>
+                    <p class="project-description">2D action game built from scratch in C++ and VSCode.</p>
+                </div>
+            </div>
+
+            <div class="video-card" onclick="openVideoModal('video3')">
+                <video id="video3" class="background-video" muted autoplay loop>
+                    <source src="assets\videos\MONSTER CHASE GAME.mp4" type="video/mp4">
+                </video>
+                <div class="project-card">
+                    <h3 class="project-title">MONSTER CHASE GAME</h3>
+                    <p class="project-description">A 2D survival game built in Unity featuring stealth mechanics and a patrolling monster.</p>
+                </div>
+            </div>
+
+            <div class="video-card" onclick="openVideoModal('video4')">
+                <video id="video4" class="background-video" muted autoplay loop>
+                    <source src="" type="video/mp4">
+                </video>
+                <div class="project-card">
+                    <h3 class="project-title">VR Puzzle game: A day in my life</h3>
+                    <p class="project-description">Ongoing</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+
+    <section id="gallery" class="section">
+        <h2>Art & Sketch Gallery</h2>
+        <p>Click on any image to view full size</p>
+        <div class="carousel-wrapper">
+            <button class="scroll-arrow left" onclick="scrollCarousel(-1)">&#10094;</button>
+                <div class="carousel">
+                    <a href="assets\images\Sketch-1.jpg" class="glightbox" data-gallery="gallery1"><img src="assets\images\Sketch-1.jpg" alt="Sketch 1" class="gallery-img"></a>
+                    <a href="assets\images\Sketch-2.jpg" class="glightbox" data-gallery="gallery1"><img src="assets\images\Sketch-2.jpg" alt="Sketch 2" class="gallery-img"></a>
+                    <a href="assets\images\Sketch-3.jpg" class="glightbox" data-gallery="gallery1"><img src="assets\images\Sketch-3.jpg" alt="Sketch 3" class="gallery-img"></a>
+                    <a href="assets\images\Sketch-4.jpg" class="glightbox" data-gallery="gallery1"><img src="assets\images\Sketch-4.jpg" alt="Realism Art" class="gallery-img"></a>
+                    <a href="assets\images\Sketch-5.jpg" class="glightbox" data-gallery="gallery1"><img src="assets\images\Sketch-5.jpg" alt="Realism Art" class="gallery-img"></a>
+                    <a href="assets\images\Sketch-6.jpg" class="glightbox" data-gallery="gallery1"><img src="assets\images\Sketch-6.jpg" alt="Realism Art" class="gallery-img"></a>
+                </div>
+            <button class="scroll-arrow right" onclick="scrollCarousel(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="videos" class="section">
+        <h2>Animations</h2>
+            <div class="project-video-grid">
+                <div class="video-card">
+                    <video class="background-video" muted autoplay loop>
+                        <source src="assets/videos/CAPSTONE PROJECT ANIMATION.mp4" type="video/mp4">
+                    </video>
+                    <div class="project-card">
+                        <h3 class="project-title">Blender Character Animation</h3>
+                        <p class="project-description">3D rigged animation of a character using Blender’s bone constraints and keyframes.</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <video class="background-video" muted autoplay loop>
+                        <source src="assets/videos/Car Animation.mp4" type="video/mp4">
+                    </video>
+                    <div class="project-card">
+                        <h3 class="project-title">Car on Desert Road</h3>
+                        <p class="project-description">Animation showcasing vehicle movement using curve path and camera tracking in Blender.</p>
+                    </div>
+                </div>
+                <!-- This is a comment
+                <div class="video-card">
+                    <video class="background-video" muted autoplay loop>
+                        <source src="assets/videos/monster_chase.mp4" type="video/mp4">
+                    </video>
+                    <div class="project-card">
+                        <h3 class="project-title">Monster Chase Scene</h3>
+                        <p class="project-description">A short cinematic chase using lighting, camera animation and object parenting in Blender.</p>
+                    </div>
+                </div> -->
+            </div>
+    </section>
+
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:dhanawade37@gmail.com">dhanawade37@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/dhanashree-dhanawade-8b96a21b2" target="_blank">linkedin.com/in/your-profile</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dhanashree Dhanawade. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+      const lightbox = GLightbox({ selector: '.glightbox' });
+    </script>
+    
+    <script>
+    function playVideo(id) {
+        const video = document.getElementById(id);
+        if (video.style.display === "none") {
+            video.style.display = "block";
+            video.play();
+        } else {
+            video.pause();
+            video.style.display = "none";
+        }
+    }
+    </script>
+
+    <div id="videoModal" class="modal" onclick="closeVideoModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <video id="modalVideo" controls autoplay></video>
+    
+            <div class="modal-details">
+                <h3 id="modalTitle">Project Title</h3>
+                <p id="modalDescription">Description goes here.</p>
+
+                <div class="modal-images" id="modalImages">
+                <!-- Images will be injected here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function openVideoModal(videoId) {
+            const modal = document.getElementById("videoModal");
+            const modalVideo = document.getElementById("modalVideo");
+            const targetVideo = document.getElementById(videoId);
+            const source = targetVideo.querySelector("source");
+
+            const modalTitle = document.getElementById("modalTitle");
+            const modalDescription = document.getElementById("modalDescription");
+            const modalImages = document.getElementById("modalImages");
+
+            if (source) {
+                modalVideo.src = source.src;
+                modal.style.display = "flex";
+                modalVideo.play();
+            }
+
+            // Dynamic content per video
+            if (videoId === "video1") {
+                modalTitle.textContent = "Treasure Sea-ker";
+                modalDescription.textContent = "A 3D underwater platformer created using Unity’s UI Toolkit, emphasizing immersive navigation and environmental storytelling. Integrated custom UI elements including health bar, inventory system, level selector, pause menu, and minimap to enhance gameplay experience.";
+                modalImages.innerHTML = `
+                    <img src="assets/images/main_menu.png" alt="main menu">
+                    <img src="assets/images/level select.png" alt="level select">
+                    <img src="assets/images/pause menu.png" alt="pause menu">
+                    <img src="assets/images/inventory.png" alt="inventory">
+                    <img src="assets/images/health bar.png" alt="health bar">
+                    <img src="assets/images/minimap.png" alt="minimap">
+                `;
+            } else if (videoId === "video2") {
+                modalTitle.textContent = "Dual-Control: A 2D Game";
+                modalDescription.textContent = "A fully functional 2D action game built from scratch in C++, featuring smooth player movement with a dynamic toggle between WASD and Arrow keys. Includes real-time FPS display, inventory system, collectible tracking (e.g., potions, wood), and printed toggle states on the game screen-all without any pre-built game engine.";
+                modalImages.innerHTML = `
+                    <img src="assets/images/Potions_collected.png" alt="Level Screenshot">
+                    <img src="assets/images/wood_collected.png" alt="Controls Demo">
+                    <img src="assets/images/Switched_to_ARROWS.png" alt="Level Screenshot">
+                    <img src="assets/images/Switched_to_WASD.png" alt="Controls Demo">
+                `;
+            }else if (videoId === "video3") {
+                modalTitle.textContent = "MONSTER CHASE GAME";
+                modalDescription.textContent = "Monster Chase is a 2D survival game built in Unity, where players use stealth to evade a patrolling monster in dark, tense environments. Featuring custom assets, AI pathfinding, and atmospheric effects, it highlights key elements of immersive gameplay design.";
+                
+            }else if (videoId === "video4") {
+                modalTitle.textContent = "VR Puzzle Game: A Day in My Life";
+                modalDescription.textContent = "A VR puzzle experience under development, combining narrative storytelling with challenge-solving in a virtual environment.";
+                /*modalImages.innerHTML = `
+                    <img src="vr_game_1.jpg" alt="VR UI">
+                    <img src="vr_game_2.jpg" alt="Puzzle Scene">
+                `;*/
+            }
+        }
+
+        function closeVideoModal() {
+            const modal = document.getElementById("videoModal");
+            const modalVideo = document.getElementById("modalVideo");
+
+            modalVideo.pause();
+            modalVideo.src = "";
+            modal.style.display = "none";
+        }
+    </script>
+
+    <script>
+        function scrollCarousel(direction) {
+            const gallery = document.querySelector(".carousel");
+            const scrollAmount = 400; // Adjust if needed
+            gallery.scrollBy({
+                left: direction * scrollAmount,
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+</body>
+</html>
