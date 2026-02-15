@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dhanashree Dhanawade – Game & UX Designer</title>
+  <meta name="description" content="Game & UX designer focused on immersive gameplay, clean UI, and fast iteration." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="top">
+
+  <!-- ===== FIXED BACKGROUND VIDEO (constant) ===== -->
+  <div class="bg" aria-hidden="true">
+    <video id="bgVideo" class="bgvid" autoplay muted loop playsinline poster="assets/images/hero_poster.jpg">
+      <source src="assets/videos/background.mp4" type="video/mp4" />
+    </video>
+    <div class="bg__gradient"></div>
+    <div class="bg__noise"></div>
+  </div>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav">
+    <a class="brand" href="#top"><span class="brand-dot"></span>Dhanashree</a>
+    <nav>
+      <a href="#intro">About</a>
+      <a href="#backstory">Backstory</a>
+      <a href="#projects">Projects</a>
+      <a href="#creative">Creative</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn--ghost" href="CV.pdf" download>CV</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero layer" data-reveal>
+    <div class="hero__wrap">
+      <h1 class="hero__name">DHANASHREE<br/>DHANAWADE</h1>
+      <p class="hero__tag"><span class="accent">Game Design</span> | <span class="accent">UI/UX</span> | <span class="accent">Level Design</span></p>
+      <a href="#intro" class="scrollcue" aria-label="Scroll to intro"><span class="mouse"></span></a>
+    </div>
+  </section>
+
+  <!-- ===== INTRO – FULL-BLEED WHITE ===== -->
+  <section id="intro" class="intro intro--white" data-reveal>
+    <div class="intro__inner">
+      <!-- Stats with icons -->
+      <aside class="intro__stats">
+        <div class="stat">
+          <div class="stat__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+              <path d="M3 7h5l2 2h9a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/>
+              <path d="M3 7V6a2 2 0 0 1 2-2h4l2 2"/>
+            </svg>
+          </div>
+          <div class="stat__meta">
+            <div class="stat__num">5</div>
+            <div class="stat__label">Projects</div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+              <path d="M6 12h12"/>
+              <path d="M8 10v4"/>
+              <path d="M16 10v4"/>
+              <path d="M4 15a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4 3 3 0 0 1-3 3h-1l-2-2h-4l-2 2H7a3 3 0 0 1-3-3Z"/>
+            </svg>
+          </div>
+          <div class="stat__meta">
+            <div class="stat__num">2</div>
+            <div class="stat__label">Flagship</div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+              <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+              <path d="M19.4 15a7.8 7.8 0 0 0 .1-2 7.8 7.8 0 0 0-.1-2l2.1-1.6-2-3.4-2.6 1a7.7 7.7 0 0 0-1.7-1L13.5 2h-3L9.7 3.9a7.7 7.7 0 0 0-1.7 1l-2.6-1-2 3.4L5.5 9a7.8 7.8 0 0 0-.1 2 7.8 7.8 0 0 0 .1 2l-2.1 1.6 2 3.4 2.6-1a7.7 7.7 0 0 0 1.7 1l.8 2.1h3l.8-2.1a7.7 7.7 0 0 0 1.7-1l2.6 1 2-3.4L19.4 15Z"/>
+            </svg>
+          </div>
+          <div class="stat__meta">
+            <div class="stat__num">6</div>
+            <div class="stat__label">Core Skills</div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+              <path d="M8 21h8"/>
+              <path d="M12 17v4"/>
+              <path d="M7 4h10v4a5 5 0 0 1-10 0V4Z"/>
+              <path d="M4 6h3v2a5 5 0 0 1-3-2Z"/>
+              <path d="M20 6h-3v2a5 5 0 0 0 3-2Z"/>
+            </svg>
+          </div>
+          <div class="stat__meta">
+            <div class="stat__num">3</div>
+            <div class="stat__label">Awards</div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Intro text -->
+      <div class="intro__body">
+        <p class="kicker">GAME DESIGNER</p>
+        <h2 class="intro__title">My name is Dhanashree, an upcoming Game Designer.</h2>
+        <p class="lead">
+          I’m a Game Designer with an MSc in Computer Games from Queen Mary University of London who blends creative exploration with structured problem-solving. I enjoy shaping mechanics around player behavior, refining systems through iteration, and making thoughtful trade-offs when constraints demand it. I’ve built projects across Unity, Unreal, and custom C++ architectures, working with C#, Blender, and gameplay systems from prototype to polish. My experience at Tata Consultancy Services strengthened my ability to debug under pressure, think structurally, and collaborate in fast-paced environments—skills that inform how I design and build games today.
+        </p>
+        <p>Unity (XR Toolkit), Unreal, C#, C++, Blender. </p>
+        <p>Prototype → playtest → iterate with performance & accessibility in mind.</p>
+        <div class="intro__cta">
+          <a class="btn btn--primary intro-btn-dark" href="#projects">View Projects</a>
+          <a class="btn btn--ghost intro-btn-ghost" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <!-- Portrait -->
+      <div class="intro__photo">
+        <img src="assets/images/DD.jpg" alt="Dhanashree portrait">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BACKSTORY ===== -->
+  <section id="backstory" class="section layer" data-reveal>
+    <header class="section__head">
+      <h2>My Backstory</h2>
+      <div class="underline"></div>
+    </header>
+
+    <ol class="tl">
+      <li class="tl-item right" data-reveal><div class="tl-card glass">
+        <h3 class="tl-title">MSc Computer Games</h3>
+        <p class="tl-sub">Queen Mary University of London • 2024–2025</p>
+        <p>Specialized in narrative design, puzzle mechanics, and VR interaction. Developed a VR narrative puzzle game with Unity, C#, and Blender. Strengthened skills in prototyping, playtesting, and agile teamwork.</p>
+      </div></li>
+
+     <li class="tl-item left" data-reveal>
+        <div class="tl-card glass">
+          <h3 class="tl-title">Technical Support Analyst</h3>
+          <p class="tl-sub">Tata Consultancy Services • 2022–2024</p>
+          <p>Worked with multidisciplinary teams to debug and optimize complex systems—experience directly transferable to fixing gameplay issues and improving player experience. Contributed to Agile pipelines (JIRA, Confluence, Trello), balancing priorities under tight deadlines. Produced technical documentation and collaborated across teams, sharpening communication between design and engineering. Adapted quickly to new tools (Kotlin) while strengthening structured problem-solving for live-service environments.</p>
+        </div>
+      </li>
+
+      <li class="tl-item right" data-reveal><div class="tl-card glass">
+        <h3 class="tl-title">BE Computer Science</h3>
+        <p class="tl-sub">VIMEET • University of Mumbai • 2019–2022</p>
+        <p>Applied programming fundamentals to gameplay creation, including developing a classic Pac-Man clone in C and a 2D action game in C++. Strengthened systems thinking, debugging, and player-centric design foundations while collaborating on technical projects presented at national-level competitions.</p>
+      </div></li>
+
+      <li class="tl-item left" data-reveal><div class="tl-card glass">
+        <h3 class="tl-title">The Spark</h3>
+        <p class="tl-sub">Early Years</p>
+        <p>My journey into game design began as a player, captivated by stories, characters, and the challenges that pushed me to think differently. Soon, playing wasn't enough—I wanted to understand how games were made, to peek behind the curtain and build my own worlds. This curiosity led me from sketchbooks and experiments to programming, game engines, and eventually, full-fledged projects that turned imagination into interaction.</p>
+      </div></li>
+    </ol>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section layer exp" data-reveal>
+    <aside class="exp__left">
+      <h2>My<br/><span class="accent">Projects</span></h2>
+      <p class="muted">Selected work from VR narrative to in-game UI. Hover to preview; click to watch.</p>
+      <a class="btn btn--primary" href="CV.pdf" download>Download CV</a>
+    </aside>
+
+    <div class="exp__grid">
+      <!-- Card 1 -->
+      <article class="exp__card" data-reveal>
+        <a class="exp__link"
+          href="#"
+          data-video="assets/videos/Trailer.mp4"
+          data-title="A Day in My Life"
+          data-desc="A design-focused breakdown of how narrative intent, technical constraints, and systemic iteration shaped this VR experience.
+                    <h3>Intent</h3>
+                      </br>• Design a VR narrative experience where mechanics carry emotional meaning rather than relying on exposition.
+                      </br>• Compress a large original story (Skull Mountain) into a focused, medium-appropriate VR experience.
+                      </br>• Use environmental symbolism, spatial audio, and subtle guidance instead of UI-heavy storytelling.
+                      </br>• Structure the experience into three symbolic puzzle spaces representing mystery, renewal, and transformation.
+
+                    <h3>Problem</h3>
+                      </br>• The original narrative scope was too large for embodied VR and risked cognitive overload.
+                      </br>• XR headset instability (blank display, hand tracking failure) limited true embodied testing.
+                      </br>• Significant debugging time reduced iteration and polish time.
+                      </br>• Validation had to continue despite unreliable hardware testing conditions.
+
+                    <h3>Iteration</h3>
+                      </br>• Removed secondary characters and replaced companion dialogue with environmental storytelling.
+                      </br>• Structured the experience into three tightly scoped symbolic scenes.
+                      </br>• Used particle emitters and layered spatial audio instead of UI prompts to guide player flow.
+                      </br>• Separated narrative text into different types (thought, guidance, destiny) to reduce cognitive clutter.
+                      </br>• Replaced heavy 3D grass meshes with 2D textures to maintain VR frame rate stability.
+                      </br>• Implemented toggle-based progression scripts to simulate puzzle completion when XR testing failed.
+
+                    <h3>Result</h3>
+                      </br>• Delivered a cohesive symbolic narrative arc despite hardware instability.
+                      </br>• Maintained immersion through systemic environmental guidance.
+                      </br>• Received positive feedback on atmosphere and emotional tone.
+                      </br>• Demonstrated scope control and medium-aware design under production pressure.
+                    "
+
+          data-images="assets/images/VR_1.png, assets/images/VR_2.png, assets/images/VR_3.png, assets/images/VR_4.png">
+          <div class="exp__media">
+            <video preload="none" muted playsinline loop poster="assets/images/vr_poster.jpg">
+              <source src="assets/videos/Trailer.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="exp__caption">
+            <h3 class="exp__title">A Day in My Life</h3>
+            <p class="exp__studio">Narrative VR Puzzle</p>
+          </div>
+          <div class="exp__hover">
+            <h4>A Day in My Life</h4>
+            <p class="exp__meta">Unity (XR Toolkit) • Blender</p>
+            <hr class="exp__rule" />
+            <p class="exp__desc">Comfort-first VR navigation and readable HUDs. Prototype → playtest → iterate.</p>
+          </div>
+        </a>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="exp__card" data-reveal>
+        <a class="exp__link"
+           href="#"
+           data-video="assets/videos/Treasure%20Sea-ker.mp4"
+           data-title="Treasure Sea-ker"
+           data-desc="A breakdown of how playtesting exposed systemic friction and how targeted iteration reshaped traversal, combat clarity, and player onboarding.
+                    <h3>Intent</h3>
+                      </br>• Contribute to a linear underwater platformer focused on exploration, traversal, and combat.
+                      </br>• Personally design and implement UI systems that improve gameplay clarity and player planning.
+                      </br>• Translate narrative and environmental goals into readable interface systems (health bar, mini-map, menus, inventory foundation).
+
+                    <h3>Problem</h3>
+                      </br>• Playtesters did not understand the grappling hook and defaulted to standard jumping, bypassing the intended traversal mechanic.
+                      </br>• Health existed visually but had no meaningful consequence, reducing tension.
+                      </br>• Players lacked clear spatial awareness and struggled to plan movement through levels.
+                      </br>• Combat feedback was unclear, and enemies could be bypassed, weakening engagement.
+
+                    <h3>My Role & Iteration</h3>
+                      </br>• Designed and implemented the Health Bar UI in C#, ensuring it dynamically responded to damage and reinforced survival awareness.
+                      </br>• Developed the Mini-map system to improve player orientation and support strategic movement decisions.
+                      </br>• Designed and structured core game menus (Main, Pause, Level Select) to improve onboarding flow and reduce friction.
+                      </br>• Implemented the initial Inventory System foundation, enabling item collection and management before later refinement by a teammate.
+                      </br>• Contributed to iterative discussions that led to clearer onboarding and stronger mechanic communication.
+                      </br>• Collaborated on refining feedback systems that made combat states more readable and meaningful.
+
+                    <h3>Result</h3>
+                      </br>• Health became mechanically meaningful rather than decorative.
+                      </br>• Players gained better spatial awareness through the mini-map system.
+                      </br>• Navigation and onboarding improved through structured menu design.
+                      </br>• Core systems became clearer and more readable in later playtests.
+                      </br>• Demonstrated ownership of interface systems that directly supported gameplay clarity and player experience."
+
+           data-images="assets/images/TS_1.png, assets/images/TS_2.png, assets/images/TS_3.png, assets/images/TS_4.png, assets/images/TS_5.png, assets/images/TS_6.png">
+          <div class="exp__media">
+            <video preload="none" muted playsinline loop poster="assets/images/Treasure_seeker_poster.jpeg">
+              <source src="assets/videos/Treasure Sea-ker.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="exp__caption">
+            <h3 class="exp__title">Treasure Sea-ker</h3>
+            <p class="exp__studio">In-game UI Systems</p>
+          </div>
+          <div class="exp__hover">
+            <h4>Treasure Sea-ker</h4>
+            <p class="exp__meta">Unity UI Toolkit • C#</p>
+            <hr class="exp__rule" />
+            <p class="exp__desc">3D underwater platformer with dynamic UI, built using Unity's UI Toolkit.</p>
+          </div>
+        </a>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="exp__card" data-reveal>
+        <a class="exp__link"
+           href="#"
+           data-video="assets/videos/game.mp4"
+           data-title="Dual-Control"
+           data-desc="Built from-scratch 2D prototype (C++).<br/> Input toggle (WASD ↔ Arrows) and feel tuning.<br/> Lightweight loop & collision experiments."
+           data-images="assets/images/DC_Potions_collected.png, assets/images/DC_Switched_to_ARROWS.png, assets/images/DC_Switched_to_WASD.png, assets/images/DC_wood_collected.png">
+          <div class="exp__media">
+            <video preload="none" muted playsinline loop poster="assets/images/2D_Dual_poster.png">
+              <source src="assets/videos/game.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="exp__caption">
+            <h3 class="exp__title">Dual-Control</h3>
+            <p class="exp__studio">2D Game Prototype</p>
+          </div>
+          <div class="exp__hover">
+            <h4>Dual-Control</h4>
+            <p class="exp__meta">Pure C++</p>
+            <hr class="exp__rule" />
+            <p class="exp__desc">2D action game built from scratch in C++ and VSCode.</p>
+          </div>
+        </a>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="exp__card" data-reveal>
+        <a class="exp__link"
+           href="#"
+           data-video="assets/videos/MONSTER%20CHASE%20GAME.mp4"
+           data-title="Monster Chase"
+           data-desc="Built a 2D survival game in Unity as my first hands-on project.
+                    <br/> Learned core concepts: character movement, collision, triggers, enemy patrols.
+                    <br/>Implemented basic chase mechanics (enemy follows player when in range).
+                    <br/>Practiced using Unity's 2D tools, sprites, and simple game loop logic.
+                    <br/>Gained experience debugging and testing a full playable loop.<br/>">
+          <div class="exp__media">
+            <video preload="none" muted playsinline loop poster="assets/images/MonsterChase_poster.png">
+              <source src="assets/videos/MONSTER CHASE GAME.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="exp__caption">
+            <h3 class="exp__title">Monster Chase</h3>
+            <p class="exp__studio">2D Stealth Survival</p>
+          </div>
+          <div class="exp__hover">
+            <h4>Monster Chase</h4>
+            <p class="exp__meta">Unity</p>
+            <hr class="exp__rule" />
+            <p class="exp__desc">A 2D survival game built in Unity featuring stealth mechanics and a patrolling monster.</p>
+          </div>
+        </a>
+      </article>
+
+      <!-- Card 5 - PCG Forest Generator -->
+      <article class="exp__card" data-reveal>
+        <a class="exp__link"
+           href="#"
+           data-video="assets/videos/PCG_Forest_Generator.mp4"
+           data-title="Procedural Forest Generator"
+           data-desc="A systems-focused exploration of balancing randomness with autonomous agents and control to create procedurally generated spaces that remain navigable and structurally coherent.              
+                      <h3>Intent</h3>
+                        <br/>Design a dense, organic forest generation system that balances unpredictability with navigability.
+                        <br/>Create structured traversal paths between start and end points.
+                        <br/>Support exploration gameplay with autonomous wandering agents.
+
+                      <h3>Problem</h3>
+                        <br/>Pure random generation created isolated regions and broken connectivity.
+                        <br/>Excessive density reduced navigability and spatial readability.
+                        <br/>Random layouts risked feeling chaotic rather than intentionally designed.
+
+                      <h3>Iteration</h3>
+                        <br/>Implemented a three-stage generation pipeline (initial fill, smoothing, structural cleanup).
+                        <br/>Used cellular automata rules to control clustering and density.
+                        <br/>Applied drunken walk algorithms to bias primary and secondary path creation.
+                        <br/>Removed small isolated regions and enforced map border containment.
+                        <br/>Ensured all paths were connected to preserve traversal viability.
+
+                      <h3>Result</h3>
+                        <br/>Generated dense yet readable maps with controlled randomness.
+                        <br/>Maintained unpredictability while preserving structural coherence.
+                        <br/>Enabled autonomous agents to wander viable paths within the generated space.
+                        <br/>Demonstrated layered system design and procedural constraint management.
+                    "
+           data-images="assets/images/PCG.png, assets/images/PCG_1.png, assets/images/PCG_2.png">
+          <div class="exp__media">
+            <video preload="none" muted playsinline loop poster="assets/images/PCG_poster.jpg">
+              <source src="assets/videos/PCG_Forest_Generator.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="exp__caption">
+            <h3 class="exp__title">Procedural Forest Generator</h3>
+            <p class="exp__studio">PCG System & AI Agents</p>
+          </div>
+          <div class="exp__hover">
+            <h4>Procedural Forest Generator</h4>
+            <p class="exp__meta">Unity C# • Cellular Automata</p>
+            <hr class="exp__rule" />
+            <p class="exp__desc">2D procedural level generator with autonomous agents using cellular automata and pathfinding.</p>
+          </div>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== CREATIVE WORKS ===== -->
+  <section id="creative" class="section layer creative-section" data-reveal>
+    <header class="section__head">
+      <h2>Creative Works</h2>
+      <div class="underline"></div>
+      <p class="muted" style="text-align:center; margin-top:12px;">Animation, 3D modeling, and concept art showcasing creative exploration.</p>
+    </header>
+
+    <div class="creative-grid">
+      <!-- Animation Works -->
+      <div class="creative-category" data-reveal>
+        <h3 class="creative-cat-title">Animation</h3>
+        <div class="creative-items">
+          <article class="creative-card">
+            <a class="creative-link" href="#" 
+               data-video="assets/videos/Car Animation.mp4"
+               data-title="Realistic Hard-Surface Animation – “3D Car Modeling & Motion Study”"
+               data-desc="Modeled a realistic car from 2D blueprints, ensuring proportional accuracy and smooth surface continuity.
+                        <br/>Applied hard-surface modeling techniques to achieve detailed geometry and clean topology.
+                        <br/>Designed HDR lighting and reflective materials to enhance realism and surface definition.
+                        <br/>Animated the car with realistic motion, supported by cinematic camera transitions.
+                        <br/>Managed the complete pipeline independently — from modeling to final render — ensuring consistency and quality control.
+                        <br/>Overcame precision challenges through careful geometry alignment and iterative refinements.
+                        <br/>Rendered high-quality visuals highlighting material realism and technical accuracy.">
+              <div class="creative-media">
+                <video muted preload="metadata">
+                  <source src="assets/videos/Car Animation.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="creative-caption">
+                <h4>Realistic Hard-Surface Animation – “3D Car Modeling & Motion Study”</h4>
+                <p class="creative-tools">Blender | Hard-Surface Modeling | Texturing | Lighting | Animation | Rendering | Camera Animation</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="creative-card">
+            <a class="creative-link" href="#"
+              data-video="assets/videos/CAPSTONE PROJECT ANIMATION.mp4"
+              data-title="Stylized 3D Animation – “Among Us: Animated Short”"
+              data-desc="Modeled and sculpted the Among Us characters from scratch using Blender’s Edit and Sculpt modes.
+                        <br/>Developed clean topology and proper edge flow for efficient rigging and animation.
+                        <br/>Created a custom rig to achieve smooth, expressive, and stylized character movements.
+                        <br/>Designed and implemented lighting setups to enhance color depth and scene mood.
+                        <br/>Composed cinematic camera angles that strengthened visual storytelling.
+                        <br/>Overcame modeling and deformation challenges through iterative refinement and topology correction.
+                        <br/>Rendered using Eevee/Cycles, balancing realism and efficiency for a polished final output.">
+              <div class="creative-media">
+                <video muted preload="metadata">
+                  <source src="assets/videos/CAPSTONE PROJECT ANIMATION.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="creative-caption">
+                <h4>Stylized 3D Animation – “Among Us: Animated Short”</h4>
+                <p class="creative-tools">Blender | Character Modeling | Rigging | Animation | Lighting | Rendering | Camera Composition</p>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- 3D Model -->
+      <div class="creative-category" data-reveal>
+        <h3 class="creative-cat-title">3D Modeling</h3>
+        <div class="creative-items">
+          <article class="creative-card creative-card--featured creative-card--3d">
+            <a class="creative-link" href="#"
+              data-video="assets/videos/Swing_Model.mp4"
+              data-title="Interactive 3D Swing Model – “Physics-Based Asset Creation for VR”"
+              data-desc="Developed a fully functional 3D swing model from scratch to meet the specific visual and mechanical needs of a VR project. When a suitable free asset couldn’t be found online, I designed, modeled, and simulated the swing myself using Blender.
+                        <br/>Modeled the entire swing from the ground up using Blender’s modeling tools, focusing on realistic proportions and rope physics.
+                        <br/>Created a working rope simulation in Blender that responds dynamically to collisions and external forces.
+                        <br/>Integrated the model into Unity, replicating the physics by duplicating the rope structure and attaching a seat to create a fully functional swing system.
+                        <br/>Applied custom materials and textures to enhance realism and consistency within the VR environment.Demonstrated problem-solving and creative initiative by building a complex mechanical asset independently when no suitable resource was available.
+                        <br/>Designed with real-time performance optimization in mind for smooth behavior in the Unity engine.">
+              <div class="creative-media">
+                <video muted preload="metadata">
+                  <source src="assets/videos/Swing_Model.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="creative-caption">
+                <h4>Interactive 3D Swing Model – “Physics-Based Asset Creation for VR”</h4>
+                <p class="creative-tools">Blender | Unity | 3D Modeling | Physics Simulation | Texturing | VR Integration</p>
+              </div>
+            </a>
+          </article>
+                
+        </div>
+      </div>
+
+      <!-- Concept Art / Sketches -->
+      <div class="creative-category creative-category--full" data-reveal>
+        <h3 class="creative-cat-title">Concept Art & Sketches</h3>
+        <div class="sketch-gallery">
+          <div class="sketch-item" data-sketch="assets/images/Sketch-1.jpg">
+            <img src="assets/images/Sketch-1.jpg" alt="Character concept sketch 1" loading="lazy">
+            <div class="sketch-overlay">
+              <span>View Full</span>
+            </div>
+          </div>
+          <div class="sketch-item" data-sketch="assets/images/Sketch-2.jpg">
+            <img src="assets/images/Sketch-2.jpg" alt="Environment concept sketch 2" loading="lazy">
+            <div class="sketch-overlay">
+              <span>View Full</span>
+            </div>
+          </div>
+          <div class="sketch-item" data-sketch="assets/images/Sketch-3.jpg">
+            <img src="assets/images/Sketch-3.jpg" alt="Prop concept sketch 3" loading="lazy">
+            <div class="sketch-overlay">
+              <span>View Full</span>
+            </div>
+          </div>
+          <div class="sketch-item" data-sketch="assets/images/sketch-4.jpg">
+            <img src="assets/images/sketch-4.jpg" alt="Character design sketch 4" loading="lazy">
+            <div class="sketch-overlay">
+              <span>View Full</span>
+            </div>
+          </div>
+          <div class="sketch-item" data-sketch="assets/images/sketch-5.jpg">
+            <img src="assets/images/sketch-5.jpg" alt="Level design sketch 5" loading="lazy">
+            <div class="sketch-overlay">
+              <span>View Full</span>
+            </div>
+          </div>
+          <div class="sketch-item" data-sketch="assets/images/sketch-6.jpg">
+            <img src="assets/images/sketch-6.jpg" alt="UI concept sketch 6" loading="lazy">
+            <div class="sketch-overlay">
+              <span>View Full</span>
+            </div>
+          </div>
+          <div class="sketch-item" data-sketch="assets/images/Sketch-7.jpg">
+            <img src="assets/images/Sketch-7.jpg" alt="Level design sketch 5" loading="lazy">
+            <div class="sketch-overlay">
+              <span>View Full</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS (full white) ===== -->
+  <section id="skills" class="skills" data-reveal>
+    <div class="skills__inner">
+      <div class="skills__row">
+        <div class="skills__media">
+          <img src="assets/images/Design2.jpg" alt="Skills banner">
+        </div>
+        <div class="skills__panel">
+          <h2 class="skills__title">TECHNICAL SKILLS</h2>
+          <div class="skills__grid">
+            <div>
+              <h3>Software &amp; Languages</h3>
+              <ul>
+                <li>Blueprints Visual Scripting &amp; C++</li>
+                <li>Unity C# (HDRP &amp; URP)</li>
+                <li>Microsoft Office &amp; Google Docs</li>
+                <li>Netbeans / Visual Studio / VS Code / Eclipse</li>
+                <li>Excel &amp; Spreadsheets</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Engines and 3D tools</h3>
+              <ul>
+                <li>Unreal Engine 4/5</li>
+                <li>Unity</li>
+                <li>Blender</li>
+                <li>Other
+                  <ul>
+                    <li><em>Android Studio</em></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills__block">
+        <h2 class="skills__title">DESIGN SKILLS</h2>
+        <div class="skills__grid">
+          <div>
+            <h3>Game Design</h3>
+            <ul>
+              <li>Mechanics and gameplay design</li>
+              <li>Level design, dialogue systems, enemy encounters &amp; cinematics</li>
+              <li>Menu layout, design &amp; implementation</li>
+              <li>Game Balance &amp; Progression</li>
+              <li>UX Design (readability, onboarding, accessibility)</li>
+            </ul>
+          </div>
+          <div>
+            <h3>UI/UX</h3>
+            <ul>
+              <li>HUD systems &amp; in-game UI (Unity UI Toolkit)</li>
+              <li>Wireframes, flows &amp; rapid prototyping</li>
+              <li>Playtest planning, capture &amp; synthesis</li>
+              <li>3-second glance rule &amp; comfort in VR</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO MODAL ===== -->
+  <div id="videoModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Project video">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="document">
+      <button class="modal__close" type="button" aria-label="Close video" data-close>✕</button>
+      <h3 class="modal__title" id="modalTitle"></h3>
+      <div class="modal__frame">
+        <video id="modalVideo" controls playsinline></video>
+      </div>
+
+      <!-- meta below video -->
+      <div class="modal__meta">
+        <div id="modalDesc" class="modal__desc"></div>
+        <div id="modalGallery" class="modal__gallery" aria-label="Project images"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section layer contact" data-reveal>
+    <div class="card glass">
+      <h2>Let's work together</h2>
+      <p class="muted">Open to Game Design & UX roles in the UK.</p>
+      <div class="cta">
+        <a class="btn btn--primary" href="mailto:ddhanawade37@gmail.com">ddhanawade37@gmail.com</a>
+        <a class="btn btn--ghost" target="_blank" rel="noopener" href="https://www.linkedin.com/in/dhanashree-dhanawade-8b96a21b2">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">© 2025 Dhanashree Dhanawade</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<script>
+  document.querySelectorAll('.creative-media video').forEach(video => {
+    video.addEventListener('mouseenter', () => {
+      video.currentTime = 0;  // restart from beginning
+      video.play();
+    });
+
+    video.addEventListener('mouseleave', () => {
+      video.pause();
+      video.currentTime = 0;  // reset to start
+    });
+
+    // Optional: also play on click (if you prefer)
+    video.addEventListener('click', () => {
+      if (video.paused) video.play();
+      else video.pause();
+    });
+  });
+</script>
