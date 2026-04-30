@@ -218,13 +218,13 @@
           </div>
           <div class="exp__caption">
             <h3 class="exp__title">A Day in My Life</h3>
-            <p class="exp__studio">Narrative VR Puzzle</p>
+            <p class="exp__studio">VR · Puzzle Design · Narrative Systems</p>
           </div>
           <div class="exp__hover">
             <h4>A Day in My Life</h4>
             <p class="exp__meta">Unity (XR Toolkit) • Blender</p>
             <hr class="exp__rule" />
-            <p class="exp__desc">Comfort-first VR navigation and readable HUDs. Prototype → playtest → iterate.</p>
+            <p class="exp__desc">Built under broken hardware — engineered a bypass system to keep testing anyway. 4.6/5 atmosphere.</p>
           </div>
         </a>
       </article>
@@ -270,13 +270,13 @@
           </div>
           <div class="exp__caption">
             <h3 class="exp__title">Treasure Sea-ker</h3>
-            <p class="exp__studio">In-game UI Systems</p>
+            <p class="exp__studio">AI · UI Systems · Playtesting · Team</p>
           </div>
           <div class="exp__hover">
             <h4>Treasure Sea-ker</h4>
             <p class="exp__meta">Unity UI Toolkit • C#</p>
             <hr class="exp__rule" />
-            <p class="exp__desc">3D underwater platformer with dynamic UI, built using Unity's UI Toolkit.</p>
+            <p class="exp__desc">Playtesters ignored the grappling hook. We redesigned around them. Score jumped 7.31 → 8.72.</p>
           </div>
         </a>
       </article>
@@ -296,13 +296,13 @@
           </div>
           <div class="exp__caption">
             <h3 class="exp__title">Dual-Control</h3>
-            <p class="exp__studio">2D Game Prototype</p>
+            <p class="exp__studio">Pure C++ · No Engine · Systems Design/p>
           </div>
           <div class="exp__hover">
             <h4>Dual-Control</h4>
             <p class="exp__meta">Pure C++</p>
             <hr class="exp__rule" />
-            <p class="exp__desc">2D action game built from scratch in C++ and VSCode.</p>
+            <p class="exp__desc">No engine. No shortcuts. Built collision, input, and movement from scratch in C++.</p>
           </div>
         </a>
       </article>
@@ -312,26 +312,46 @@
         <a class="exp__link"
            href="#"
            data-video="assets/videos/MONSTER%20CHASE%20GAME.mp4"
-           data-title="Monster Chase"
-           data-desc="Built a 2D survival game in Unity as my first hands-on project.
-                    <br/> Learned core concepts: character movement, collision, triggers, enemy patrols.
-                    <br/>Implemented basic chase mechanics (enemy follows player when in range).
-                    <br/>Practiced using Unity's 2D tools, sprites, and simple game loop logic.
-                    <br/>Gained experience debugging and testing a full playable loop.<br/>">
+           data-title="Scan & Mend — UE5 Gameplay System"
+           data-desc="Built the core repair mechanic for Signal Lost — a sci-fi game currently in development — from scratch in UE5.
+                      <h3>Intent</h3>
+                      </br>• Build a scan-and-repair mechanic for Signal Lost, a sci-fi game where the world is broken and the player restores it.
+                      </br>• Let the player identify broken objects, visualise their original state via a hologram, and physically restore them.
+                      </br>• Design the system to be scalable and designer-friendly — no repetitive setup, every object just works.
+
+                    <h3>Problem</h3>
+                      </br>• Each broken object needed its own hologram, mesh swap, and material change — without duplicating logic across every object.
+                      </br>• The hologram had to feel alive — hovering and spinning — without expensive overhead.
+                      </br>• Adding new broken objects to any level had to be instant, with zero extra Blueprint wiring per object.
+
+                    <h3>Iteration</h3>
+                      </br>• Line Trace By Channel fires from the player camera to detect broken objects in the world.
+                      </br>• Cast to BP_Mendable_Objects validates the hit and reads the object's individual data.
+                      </br>• Hologram spawns dynamically in front of the player using Get Forward Vector and world location offsets.
+                      </br>• Event Tick drives a sine-wave to make it hover — Add Local Rotation keeps it spinning.
+                      </br>• Press M → Set Static Mesh and Set Material swaps the broken object to its fixed version, plays a restore animation, hologram hides.
+                      </br>• Construction Script inside BP_Mendable_Objects runs at editor time — Broken Mesh, Fixed Mesh, and Material are assigned per object directly from the Details panel. No extra setup needed.
+                      </br>• Hologram material built from scratch. All Blueprint logic written from scratch.
+
+                    <h3>Result</h3>
+                      </br>• Fully functional, scalable scan-and-mend system live inside Signal Lost.
+                      </br>• New broken objects can be dropped into any level and configured instantly from the Details panel.
+                      </br>• >Demonstrated designer-empathy in system architecture — built for the team, not just for the moment.
+                      </br>• There's a lot more to Signal Lost than just fixing things — but that's for another update. 👀"
           <div class="exp__media">
-            <video preload="none" muted playsinline loop poster="assets/images/MonsterChase_poster.png">
-              <source src="assets/videos/MONSTER CHASE GAME.mp4" type="video/mp4" />
+            <video preload="none" muted playsinline loop poster="">
+              <source src="assets/videos/1_Hologram.mp4" type="video/mp4" />
             </video>
           </div>
           <div class="exp__caption">
-            <h3 class="exp__title">Monster Chase</h3>
-            <p class="exp__studio">2D Stealth Survival</p>
+            <h3 class="exp__title">Scan &amp; Mend</h3>
+            <p class="exp__studio">Signal_lost · UE5 Blueprints · In Development</p>
           </div>
           <div class="exp__hover">
             <h4>Monster Chase</h4>
-            <p class="exp__meta">Unity</p>
+            <p class="exp__meta">Unreal Engine 5 · Blueprints</p>
             <hr class="exp__rule" />
-            <p class="exp__desc">A 2D survival game built in Unity featuring stealth mechanics and a patrolling monster.</p>
+            <p class="exp__desc">Drop any broken object into a level — it just works. Built from scratch in UE5 Blueprints.</p>
           </div>
         </a>
       </article>
@@ -374,13 +394,13 @@
           </div>
           <div class="exp__caption">
             <h3 class="exp__title">Procedural Forest Generator</h3>
-            <p class="exp__studio">PCG System & AI Agents</p>
+            <p class="exp__studio">PCG · Cellular Automata · AI Agents</p>
           </div>
           <div class="exp__hover">
             <h4>Procedural Forest Generator</h4>
             <p class="exp__meta">Unity C# • Cellular Automata</p>
             <hr class="exp__rule" />
-            <p class="exp__desc">2D procedural level generator with autonomous agents using cellular automata and pathfinding.</p>
+            <p class="exp__desc">Pure randomness made unplayable maps. Built a 3-stage pipeline to make chaos feel designed.</p>
           </div>
         </a>
       </article>
